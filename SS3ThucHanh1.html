@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CodeGym</title>
+</head>
+<body>
+<script>
+    var nam =  parseInt(prompt("Mời bạn nhập vào năm muốn kiểm tra : "));
+    if(nam % 4 == 0) {
+        if(nam % 100 != 0) {
+            alert("Năm " + nam + " là năm nhuận !");
+        }else if(nam % 400 == 0) {
+            alert("Năm " + nam + " là năm nhuận !");
+        }else {
+            alert("Năm " + nam + " không phải năm nhuận !");
+        }
+    }else if (nam % 100 == 0 && nam % 400 == 0) {
+        alert("Năm " + nam + " là năm nhuận !");
+    }else {
+        alert("Năm " + nam + " không là năm nhuận !");
+    }
+</script>
+</body>
+</html>
